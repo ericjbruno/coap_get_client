@@ -80,20 +80,13 @@ public class CoapGetClient {
                 System.err.println("Error");
             }
         });
-
-        // wait for user
-        System.out.println("press enter to continue");
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        try { br.readLine(); } catch (IOException e) { }
         
         AsynchListener asynchListener = new AsynchListener();
         client.get( asynchListener );
         // execution continues without waiting...
         
-        // wait for user
-        System.out.println("press enter to exit");
-        br = new BufferedReader(new InputStreamReader(System.in));
-        try { br.readLine(); } catch (IOException e) { }
+        // wait
+        try { Thread.sleep(5000; } catch (IOException e) { }
     }
 
 }
