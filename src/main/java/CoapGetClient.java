@@ -9,6 +9,7 @@ import org.eclipse.californium.core.Utils;
 
 /**
  * @author ebruno
+ *
  */
 public class CoapGetClient {
     
